@@ -10,6 +10,7 @@ library(tidypredict)
 library(randomForest)
 library(vip)
 library(rpart)
+library(h2o)
 # source: brewcabin.com and yakima chief hops
 sheet <- "https://docs.google.com/spreadsheets/d/1qNedHmXqhqzpqt1vgzjUJ0NYtY_7Lov_Vue_k_hZPf8/edit#gid=1675045246"
 # public sheet so we don't neet authorization
@@ -334,6 +335,8 @@ hops %>% filter(str_detect(variety,"Saaz")) %>%
 # create subset features to be used
 hops_quant_only <- hops %>% select(variety,type,alpha,beta,cohumulone,myrcene,
                                caryophyllene,humulene,farnesene,total_oil)
+
+write.csv(hops_quant_only,file="./data/hops_quant.csv")
 #add back qualitative features
 # create "long" data set
 hops_all_features <- hops %>%
@@ -355,7 +358,7 @@ hops_quant_dt <- rpart(type ~.,method = "class",data = hops_quant_only[,-1])
 rpart.plot::rpart.plot(hops_quant_dt)
 
 # view accuracy
-wrong <- predict(hops_quant_dt,hops_quant_only,type="class") %>%
+wrong.dt <- predict(hops_quant_dt,hops_quant_only,type="class") %>%
   enframe(name= NULL,value = "prediction") %>%
   bind_cols(hops_quant_only) %>%
   group_by(type,prediction) %>%
@@ -367,18 +370,19 @@ wrong <- predict(hops_quant_dt,hops_quant_only,type="class") %>%
   replace_na(list(n=0)) %>%
   mutate(correct = (type==prediction))
 
-accuracy = wrong %>% group_by(correct) %>% tally(n)
-
+accuracy = wrong.dt %>% group_by(correct) %>% tally(n)
+accuracy
 
 
 # show model accuracy
-wrong %>%  ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
+wrong.dt %>%  ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
   scale_size(range=c(5,30)) +
   scale_color_manual(values=c("red","green")) +
   labs(x="Actual Type",
        y="Predicted Type",
-       title="Model Accuracy")
-#  geom_label(aes(label=n,size=1))
+       title="Decision Tree Model Accuracy") +
+  theme(legend.position = "none") +
+  geom_label(aes(label=n,size=1))
 
 
 # create training and test sets
@@ -389,22 +393,27 @@ hops_split <- initial_split(hops_all_features, prob = 0.80, strata = alpha)
 hops_train <- training(hops_split)
 hops_test <- testing(hops_split)
 
-# Build a model. Since we want to predict a categorical variable,
+# -----------------------------------------------------
+# Build a random forest model. Since we want to predict a categorical variable,
 # hop type, linear regression won't work.  We use random forest.
 
 
 set.seed(1)
-model <- randomForest(type~.,data=hops_quant_only,
+model <- randomForest(type~.,data=hops_quant_only[,-1],
                       localImp = TRUE,
 #                      replace = FALSE,
 #                     maxnodes = 12,
                       importance = TRUE,
                       na.action = na.exclude)
-tree_func(model,1)
+#tree_func(model,1)
 model
 vip::vip(model)
 
-predicted_type <- model$confusion %>% as_tibble(rownames = "actual_type")
+wrong.rf <- model$confusion %>%
+  as_tibble(rownames = "actual_type") %>%
+
+
+
 tidypredict_fit(model)[[1]]
 # need to prune factor variables to top 50
 #model <- randomForest(type ~.,data=hops_all_features[,-1],na.action = na.exclude)
@@ -412,6 +421,7 @@ getTree(model,labelVar = TRUE)
 
 tree_func(model,1)
 
+# ------------------------------------------------------
 # plot random forest tree
 library(dplyr)
 library(ggraph)
@@ -465,3 +475,19 @@ tree_func <- function(final_model,
 
   print(plot)
 }
+
+# ---------------------------------------------
+# H2o
+
+h2o.init()
+hops.hex = h2o.uploadFile(file.path("data","hops_quant.csv"),
+                          destination_frame = "hops.hex",
+                          skipped_columns = c(1,2))
+
+
+hops.rf = h2o.randomForest(y = 1,
+                           training_frame = hops.hex,
+                           ntrees = 50,
+                           max_depth = 100)
+
+print(hops.rf)
