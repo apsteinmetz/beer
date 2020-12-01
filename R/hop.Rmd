@@ -1,3 +1,23 @@
+---
+title: "Hop Cultivar Analysis"
+output: html_notebook
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+Typically, I will think about hopping with a style archetype in mind,  I will survey a list of hops, read about the attributes, chemical compositions and then choose the hop bill. I seldom think about the universe of hop cultivars as a whole and what meta-profile it might have. For this note, I will look at aggregate features of multiple cultivars with a focus on the top of the hop taxonomy, purpose, which can be either bittering, aroma or dual-purpose.  Can we analytically determine the purpose of a hop using it's chemical composition?  The simple answer is, of course, "yes."  High-alpha cultivars are usually bittering hops.  The purpose of this exercise is not to discover the obvious but to explore the techniques we can bring to bear to do meta-analysis and visualization on large data sets of brewing information.
+
+Getting the data and putting it into analyzable form is the biggest part of these projects.  We need nice tables of data but often we have unstructured or semi-structured text.  We are in luck today because the good folks at [brewcabin.com](https://www.brewcabin.com/hop-varieties/) have put the data from 147 hop cultivars into a publicly accessible Google spreadsheet that we can easily import.
+
+Less structured data is more of a pain but do-able. The source for much of the hops spreadsheet was information from Yakima Chief Hops.  I assume they hand scraped [this PDF file](https://www.yakimachief.com/wp-content/uploads/Yakima_Chief_Hops_Varieties_19.02.04.pdf) but we could build a robot to do it (with permission, of course). You can look at a [project I did here](https://outsiderdata.netlify.app/post/is-free-pre-k-in-nyc-favoring-the-rich/) for an example of data scraping from within PDF files. 
+
+The format of this note is a data science notebook.  The code to replicate the work and present all the data is presented along with the descriptive text.  In the web page version there is a button at at the top labeled "code" which you can use to toggle code visibility on or off.  I recommend you turn code visibility "off" to begin with.  This is more readable that way.
+
+# Load the data from the spreadsheet
+```{r Loading}
 # Hop analysis demo
 
 library(tidyverse)
@@ -28,6 +48,13 @@ if (file.exists(here("data","hops_raw.rdata"))){
 
   save(hops_raw,file=here("data","hops_raw.rdata"))
 }
+
+hops_raw
+```
+# Clean up the Data
+
+While importing the spreadsheet is easy the data still needs a lot of cleaning up.  The chemical constituents are expressed as high and low ranges.  I choose to condense them into average values.  Further the words used to describe qualitative attributes like aroma and beer style are inconsistent. Are "citrusy" and "citrus" the same thing? Misspellings are common, German words, especially.  We also strip out "stop words" like "and","the","lots", etc, that don't really say anything. Fixing these is a tedious art but critical to success.  This part is actually the bulk of the code and uses the most run time in the notebook.  One thing that's confusing about our cleaned data is that I've embeded all the descriptive terms as lists in single columns. That will be make running our models easier.
+```{r Cleaning}
 
 # DATA CLEANING
 # tidy up names
@@ -161,8 +188,8 @@ appendix <- tribble(
   "Spalter Select","noble",
   "Hallertauer Mittelfrüh","noble"
   )
-hops_aromas <- bind_rows(hops_aromas,appendix) %>%
-  mutate(aromas = as_factor(aromas))
+hops_aromas <- bind_rows(hops_aromas,appendix) %>% 
+  mutate(aroma = as_factor(aroma))
 
 # Put the word vectors back into the data as lists
 hops <- hops %>%
@@ -231,21 +258,35 @@ hops <- hops %>%
   select(-substitutions) %>%
   left_join(nest(hops_subs,substitutions=substitutions),by="variety")
 
+hops
+```
+
+# Exploratory Data Analysis (EDA)
+
+We'll start by looking at some basic feature of the data set.  In this spreadsheet the U.S. represents the majority of the cultivars.  While the folks at Brew Cabin claim this is "All Hop Varieties on Earth," you can go to the growers association web pages for any of these countries and find many more.  Caveat Emptor.
+```{r}
 # =============================================================
 #  EXPLORATORY DATA ANALYSIS
 # show origins of hops
 hops %>% ggplot(aes(origin,fill=type)) + geom_bar() +
   coord_flip()
+```
 
+Every brewer knows that high alpha hops are for bittering.  Let's demonstrate this.  
+```{r}
 #hops %>% select(origin,type) %>% table()
 
 # show alpha acid distribution by type
 hops %>% ggplot(aes(alpha,fill=type)) +
-  #  geom_density(alpha=0.5) +
     geom_histogram(binwidth = 2,position = "dodge") +
-  #  facet_wrap(~type) +
-  NULL
+  labs(title="Bittering Hops Have More Alpha Acid (Duh.)",
+  subtitle = "Frequency of Hop Alpha Acid % in Cultivars by Purpose",
+       y="Count",x = "Alpha Acid %")
+```
 
+Most of the green bars (bittering) have more than 10% alpha acids and most of the red bars (aroma) have less.  This chart could be clearer.  Let's do a "density" plot instead.
+
+```{r message=FALSE}
 # better visualization
 hops %>% ggplot(aes(x=alpha,y=type,fill=type)) +
   # geom_density(alpha=0.5) +
@@ -254,12 +295,17 @@ hops %>% ggplot(aes(x=alpha,y=type,fill=type)) +
   scale_x_continuous(expand = c(0, 0)) +   # for both axes to remove unneeded padding
   coord_cartesian(clip = "off") + # to avoid clipping of the very top of the top ridgeline
   theme_ridges() +
-  labs(title= "Distribution of Hop Alpha Acids by Purpose",
+  labs(title="Bittering Hops Have More Alpha Acid (Duh.)",
+       subtitle= "Distribution of Hop Alpha Acid in Cutivars by Purpose",
        y = "Relative Occurance",
-       x = "Alpha Acid Range")
-  NULL
+       x = "Alpha Acid %")
+```
 
-  # Now oils
+This is a much more pleasing plot and actually reveals a surprise.  Dual purpose hops are not spread evenly across the alpha acid spectrum but are bi-modally distributed.  Is this because growers select for bittering or aroma and brewers put the dual purpose label on later?
+
+
+```{r}
+# Now oils
   hops %>% ggplot(aes(x=total_oil,y=type,fill=type)) +
     # geom_density(alpha=0.5) +
     geom_density_ridges(alpha=0.5) +
@@ -357,159 +403,6 @@ hops_aromas %>%
   coord_flip() +
   labs(x= "Aroma",y="Hop Cultivars With that Descriptor")
 
-# Descriptions for hops are like wine. Every judge is different and
-# descriptions are often questionable. Consider the classic Saaz and
-# a Saaz hybrid.  From the aroma they could not be considered substitutes,
-# yet they are.
-hops %>% filter(str_detect(variety,"Saaz")) %>%
-  select(variety,aroma,substitutions) %>% knitr::kable()
 
-# setup for ML
-# Different projects
-# 1. are quantitative assays useful for predicting what type of hop,
-# bittering, aroma or dual-purpose?
-# 2. are subjective descriptors consistant with hop type?
-# 3. are quantitative assays useful for predicting what what
-# qualitative descriptors will be used?
-# An unanswered question is: Is knowledge of the type of hop an
-# influence on the reviewers choice of descriptors.
+```
 
-# create subset features to be used
-hops_quant_only <- hops %>% select(variety,type,alpha,beta,cohumulone,myrcene,
-                               caryophyllene,humulene,farnesene,total_oil)
-
-write.csv(hops_quant_only,file="./data/hops_quant.csv")
-#add back qualitative features
-# create "long" data set
-hops_all_features <- hops %>%
-  select(variety,type,origin,alpha,beta,
-         cohumulone,myrcene,caryophyllene,
-         humulene,farnesene,total_oil) %>%
-  full_join(hops_aromas,by="variety") %>%
-  full_join(hops_styles,by="variety") %>%
-  full_join(hops_subs) %>%
-  select(-variety)
-
-
-
-# --------------------------------------------------------------
-# Simple recursive partition models to make a decision tree
-hops_quant_dt <- rpart(type ~.,method = "class",data = hops_quant_only[,-1])
-
-# visualize decision tree
-rpart.plot::rpart.plot(hops_quant_dt)
-
-# show feature importance
-vip::vip(hops_quant_dt)
-
-# view accuracy
-wrong.dt <- predict(hops_quant_dt,hops_quant_only,type="class") %>%
-  enframe(name= NULL,value = "prediction") %>%
-  bind_cols(hops_quant_only) %>%
-  group_by(type,prediction) %>%
-  tally() %>%
-  arrange(desc(n)) %>%
-#  expand(type,prediction) %>%
-#  full_join(wrong) %>%
-  unique %>%
-  replace_na(list(n=0)) %>%
-  mutate(correct = (type==prediction))
-
-accuracy = wrong.dt %>% group_by(correct) %>% tally(n)
-accuracy
-
-
-# show model accuracy
-wrong.dt %>%  ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
-  scale_size(range=c(5,30)) +
-  scale_color_manual(values=c("red","green")) +
-  labs(x="Actual Type",
-       y="Predicted Type",
-       title="Decision Tree Model Accuracy") +
-  theme(legend.position = "none") +
-  geom_label(aes(label=n,size=1))
-
-# -----------------------------------------------------
-# Build a random forest model. Since we want to predict a categorical variable,
-# hop type, linear regression won't work.  We use random forest.
-set.seed(1)
-model <- randomForest(type~.,data=hops_quant_only[,-1],
-                      localImp = TRUE,
-#                      replace = FALSE,
-#                     maxnodes = 12,
-                      importance = TRUE,
-                      na.action = na.exclude)
-#tree_func(model,1)
-model
-vip::vip(model)
-
-#wrong.rf <- model$confusion %>%
-#  as_tibble(rownames = "actual_type")
-
-
-# view accuracy
-wrong.rf <- predict(model,hops_quant_only,type="class") %>%
-  enframe(name= NULL,value = "prediction") %>%
-  bind_cols(hops_quant_only) %>%
-  group_by(type,prediction) %>%
-  remove_missing() %>%
-  tally() %>%
-  arrange(desc(n)) %>%
-  expand(type,prediction) %>%
-  full_join(wrong) %>%
-  unique %>%
-  replace_na(list(n=0)) %>%
-  mutate(correct = (type==prediction)) %>%
-  {.}
-
-accuracy = wrong.rf %>% group_by(correct) %>% tally(n)
-accuracy
-
-# show model accuracy
-wrong.rf %>%  ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
-  scale_size(range=c(5,30)) +
-  scale_color_manual(values=c("red","green")) +
-  labs(x="Actual Type",
-       y="Predicted Type",
-       title="Decision Tree Model Accuracy") +
-  theme(legend.position = "none") +
-  geom_label(aes(label=n,size=1))
-
-
-# ---------------------------------------------
-# H2o
-
-# create a row for every unique combination of data points, including qualiative variables
-hops_long <- hops %>% unnest(aroma) %>% select(!where(is.list))
-
-model.matrix(~aroma,data=hops_long) %>% bind_cols(hops)
-
-hops_dummies <- hops %>% select(variety,type, aroma) %>%
-  unnest(aroma) %>%
-  dcast(variety+type~aroma) %>%
-  as_tibble()
-
-hops_full <- hops_quant_only %>%
-  full_join(hops_dummies,by=c("variety","type")) %>%
-  remove_missing()
-
-#  model.matrix()
-#  unnest(beer_styles) %>%
-#  unnest(substitutions)
-
-write_csv(hops_long,here("data","hops_long.csv"))
-write_csv(hops_dummies,here("data","hops_dummies.csv"))
-write_csv(hops_full,here("data","hops_full.csv"))
-h2o.init()
-hops.hex = h2o.uploadFile(file.path("data","hops_full.csv"),
-                          destination_frame = "hops.hex",
-                          skipped_columns = c(1))
-
-
-hops.rf = h2o.randomForest(y = 1,
-                           training_frame = hops.hex,
-                           ntrees = 50,
-                           max_depth = 100)
-
-print(hops.rf)
-vip(hops.rf)

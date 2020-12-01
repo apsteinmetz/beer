@@ -1,0 +1,662 @@
+variety,type,origin,alpha,beta,cohumulone,myrcene,caryophyllene,humulene,farnesene,total_oil,aroma
+Ahtanum®,Aroma,United States,5.5,5.5,32.5,52.5,10.5,18,0.5,0.5,citrus
+Ahtanum®,Aroma,United States,5.5,5.5,32.5,52.5,10.5,18,0.5,0.5,grapefruit
+Ahtanum®,Aroma,United States,5.5,5.5,32.5,52.5,10.5,18,0.5,0.5,geranium
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,grapefruit
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,orange
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,lemon
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,melon
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,apricot
+Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,peach
+Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,spicy
+Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,herbal
+Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,subtle
+Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,citrus
+Aurora,Aroma,Slovenia,7.5,3,23,22.5,7.5,22.5,7.5,0.5,noble
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,floral
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,fruity
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,passion
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,fruit
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,grapefruit
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,pineapple
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,grape
+Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,lemongrass
+Bobek,Aroma,Slovenia,5,5,29,37.5,5,16,5.5,2,floral
+Bobek,Aroma,Slovenia,5,5,29,37.5,5,16,5.5,2,pine
+Brewers Gold,Aroma,Germany,8,3.75,44,45.5,8.75,22.5,0.5,1.75,blackcurrant
+Brewers Gold,Aroma,Germany,8,3.75,44,45.5,8.75,22.5,0.5,1.75,fruity
+Brewers Gold,Aroma,Germany,8,3.75,44,45.5,8.75,22.5,0.5,1.75,spicy
+Brewers Gold,Aroma,Germany,8,3.75,44,45.5,8.75,22.5,0.5,1.75,blackcurrant
+Brewers Gold,Aroma,Germany,8,3.75,44,45.5,8.75,22.5,0.5,1.75,spicy
+Cascade,Aroma,United States,7,6.5,32.5,52.5,7,17,7.5,1,medium
+Cascade,Aroma,United States,7,6.5,32.5,52.5,7,17,7.5,1,floral
+Cascade,Aroma,United States,7,6.5,32.5,52.5,7,17,7.5,1,citrus
+Cascade,Aroma,United States,7,6.5,32.5,52.5,7,17,7.5,1,grapefruit
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,grapefruit
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,melon
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,lime
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,gooseberry
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,passion
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,fruit
+Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,lychee
+Crystal,Aroma,United States,3,5,23,52.5,6,21,0.5,1,wood
+Crystal,Aroma,United States,3,5,23,52.5,6,21,0.5,1,green
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,smooth
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,delicate
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,floral
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,lavender
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,spice
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,honey
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,earth
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,lemon
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,orange
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,grapefruit
+East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,thyme
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,melon
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,berry
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,orange
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,peel
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,lime
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,papaya
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,pine
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,fresh
+Ekuanot™,Aroma,United States,14,4.5,33.5,37.5,10,16,0.5,3,peppers
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,strong
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,fruit
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,citrus
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,layers
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,spicy
+Falconer's Flight 7C's®,Aroma,United States,9.5,4.5,24,35,10,27.5,10,1,earth
+Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,distinct
+Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,tropical
+Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,floral
+Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,lemon
+Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,grapefruit
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,wood
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,mint
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,grass
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,subtle
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,fruit
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,delicate
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,mint
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,grass
+Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,floral
+Gold,Aroma,Slovenia,4.5,4,NA,NA,NA,NA,NA,1.5,honey
+Gold,Aroma,Slovenia,4.5,4,NA,NA,NA,NA,NA,1.5,oregano
+Gold,Aroma,Slovenia,4.5,4,NA,NA,NA,NA,NA,1.5,basil
+Gold,Aroma,Slovenia,4.5,4,NA,NA,NA,NA,NA,1.5,nettle
+Gold,Aroma,Slovenia,4.5,4,NA,NA,NA,NA,NA,1.5,hay
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,fragrant
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,zest
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,lemon
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,orange
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,grapefruit
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,delicate
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,sweet
+Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,fragrant
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,zest
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,lemon
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,orange
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,grapefruit
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,delicate
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,sweet
+Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
+Hallertau,Aroma,United States,4,3.5,21,39.5,11,34,0.5,0.5,noble
+Hallertau,Aroma,United States,4,3.5,21,39.5,11,34,0.5,0.5,earth
+Hallertau,Aroma,United States,4,3.5,21,39.5,11,34,0.5,0.5,herbal
+Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,spicy
+Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,floral
+Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,citrus
+Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,earth
+Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,grass
+Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,nectar
+Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,fruits
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,floral
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,wood
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,coconut
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,distinct
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,whiskey
+HBC 472,Aroma,United States,10,8,44,NA,20,NA,NA,2.5,bourbon
+Hersbrucker,Aroma,Germany,4,4.5,22,20,9.5,20,0.5,0.5,hay
+Hersbrucker,Aroma,Germany,4,4.5,22,20,9.5,20,0.5,0.5,tobacco
+Hersbrucker,Aroma,Germany,4,4.5,22,20,9.5,20,0.5,0.5,orange
+Hersbrucker Pure,Aroma,Germany,4.5,2,26,23.5,11.5,27,0.5,0,noble
+Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,honeydew
+Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,melon
+Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,strawberry
+Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,noble
+Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,delicate
+Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,floral
+Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,bouquet
+Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,spice
+Lublin/Lubelski,Aroma,Poland,4,2.5,27.5,30,10,37.5,11,0.5,noble
+Lublin/Lubelski,Aroma,Poland,4,2.5,27.5,30,10,37.5,11,0.5,lavendar
+Lublin/Lubelski,Aroma,Poland,4,2.5,27.5,30,10,37.5,11,0.5,magnolia
+Mandarina Bavaria,Aroma,Germany,8.5,5,33,71,3,10,0.5,2,citrus
+Mandarina Bavaria,Aroma,Germany,8.5,5,33,71,3,10,0.5,2,fruity
+Mandarina Bavaria,Aroma,Germany,8.5,5,33,71,3,10,0.5,2,tangerine
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,earth
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,blueberry
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,tangerine
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,papya
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,rose
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,blossoms
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,grass
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,bubble
+Mosaic®,Aroma,United States,12,3.5,23,51.5,5.5,12.5,0.5,1.5,gum
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,fresh
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,citrus
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,mojito
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,lime
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,lively
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,lemon
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,lime
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,tropical
+Motueka,Aroma,New Zealand,6.5,5,29,48,2,3,12.2,0,fruit
+Mount Hood,Aroma,United States,6.5,6,22.5,60,8.5,20,0.5,1,herbal
+Mount Hood,Aroma,United States,6.5,6,22.5,60,8.5,20,0.5,1,pungent
+Mount Hood,Aroma,United States,6.5,6,22.5,60,8.5,20,0.5,1,spicy
+Pacific Hallertau,Aroma,New Zealand,5.5,6.5,24,45,9.5,27.5,0.5,1.5,citrusy
+Pacific Hallertau,Aroma,New Zealand,5.5,6.5,24,45,9.5,27.5,0.5,1.5,spicy
+Pacific Hallertau,Aroma,New Zealand,5.5,6.5,24,45,9.5,27.5,0.5,1.5,orange
+Pacific Hallertau,Aroma,New Zealand,5.5,6.5,24,45,9.5,27.5,0.5,1.5,floral
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,orange
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,zest
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,marmalade
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,classic
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,hallertau
+Pacifica,Aroma,New Zealand,5.5,5.5,25,12.5,16,50.5,0.5,0.5,floral
+Palisade®,Aroma,United States,8,6.5,27,48.5,12,15,NA,1,apricot
+Palisade®,Aroma,United States,8,6.5,27,48.5,12,15,NA,1,grass
+Palisade®,Aroma,United States,8,6.5,27,48.5,12,15,NA,1,floral
+Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,powerful
+Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,tropical
+Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,passionfruit
+Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,grapefruit
+Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,citrus
+Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,earth
+Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,herbal
+Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,floral
+Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,citrus
+Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,tropical
+Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,fruit
+Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,black
+Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,pepper
+Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,floral
+Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,spice
+Saphir,Aroma,Germany,3,5.5,14.5,32.5,11.5,25,0.5,0.5,spicy
+Saphir,Aroma,Germany,3,5.5,14.5,32.5,11.5,25,0.5,0.5,fruity
+Saphir,Aroma,Germany,3,5.5,14.5,32.5,11.5,25,0.5,0.5,floral
+Saphir,Aroma,Germany,3,5.5,14.5,32.5,11.5,25,0.5,0.5,tangerine
+Savinjski Golding,Aroma,Slovenia,5,2.5,27.5,30,10,36,3.5,0.5,noble
+Select,Aroma,Germany,4.5,3.5,24,30,7,16,18.5,0,spicy
+Select,Aroma,Germany,4.5,3.5,24,30,7,16,18.5,0,grass
+Spalt,Aroma,United States,4.5,4,22.5,45,5,15,12.5,0.5,noble
+Spalt,Aroma,United States,4.5,4,22.5,45,5,15,12.5,0.5,earth
+Spalt,Aroma,United States,4.5,4,22.5,45,5,15,12.5,0.5,herbal
+Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,noble
+Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,earth
+Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,herbal
+Spalter Select,Aroma,Germany,5,3.5,23,20,9,20,20,0.5,spicy
+Spalter Select,Aroma,Germany,5,3.5,23,20,9,20,20,0.5,grass
+Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,spicy
+Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,citrusy
+Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,floral
+Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,fruity
+Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,herbal
+Styrian Golding,Aroma,Slovenia,5,2.5,27.5,30,10,36,3.5,0.5,resin
+Styrian Golding,Aroma,Slovenia,5,2.5,27.5,30,10,36,3.5,0.5,earth
+Styrian Golding,Aroma,Slovenia,5,2.5,27.5,30,10,36,3.5,0.5,white
+Styrian Golding,Aroma,Slovenia,5,2.5,27.5,30,10,36,3.5,0.5,pepper
+Summer,Aroma,Australia,5.5,5,22.5,33.5,9.5,39,0.5,1.5,apricot
+Summer,Aroma,Australia,5.5,5,22.5,33.5,9.5,39,0.5,1.5,melon
+Sussex,Aroma,United Kingdom,4.5,2.5,37.5,42,NA,23,0.5,0,earth
+Sussex,Aroma,United Kingdom,4.5,2.5,37.5,42,NA,23,0.5,0,grass
+Sussex,Aroma,United Kingdom,4.5,2.5,37.5,42,NA,23,0.5,0,mint
+Sussex,Aroma,United Kingdom,4.5,2.5,37.5,42,NA,23,0.5,0,citrus
+Sussex,Aroma,United Kingdom,4.5,2.5,37.5,42,NA,23,0.5,0,vanilla
+Sylva,Aroma,Australia,6,3.5,22.5,31,6.5,22.5,25,1,floral
+Sylva,Aroma,Australia,6,3.5,22.5,31,6.5,22.5,25,1,herbal
+Sylva,Aroma,Australia,6,3.5,22.5,31,6.5,22.5,25,1,noble
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,lemon
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,grapefruit
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,cedar
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,pine
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,spice
+Tahoma,Aroma,United States,6.5,7.5,16,60,4,10,0.5,1.5,pepper
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,floral
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,spice
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,herbal
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,spicy
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,pepper
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,black
+Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,tea
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,floral
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,spice
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,herbal
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,spicy
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,pepper
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,black
+Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,tea
+Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,medium
+Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,floral
+Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,herbal
+Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,grassy
+Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,fruity
+Triplepearl,Aroma,United States,10.5,3.5,NA,NA,NA,9,NA,1,melon
+Triplepearl,Aroma,United States,10.5,3.5,NA,NA,NA,9,NA,1,orange
+Triplepearl,Aroma,United States,10.5,3.5,NA,NA,NA,9,NA,1,resin
+Triplepearl,Aroma,United States,10.5,3.5,NA,NA,NA,9,NA,1,spice
+Triplepearl,Aroma,United States,10.5,3.5,NA,NA,NA,9,NA,1,pepper
+Triskel,Aroma,France,8.5,4,21.5,60,6,13,0.5,1.5,spicy
+Triskel,Aroma,France,8.5,4,21.5,60,6,13,0.5,1.5,strong
+Triskel,Aroma,France,8.5,4,21.5,60,6,13,0.5,1.5,floral
+Triskel,Aroma,France,8.5,4,21.5,60,6,13,0.5,1.5,herbal
+Triskel,Aroma,France,8.5,4,21.5,60,6,13,0.5,1.5,citrus
+Ultra,Aroma,United States,2.5,3.5,30.5,20,12.5,42.5,0.5,0.5,spicy
+Ultra,Aroma,United States,2.5,3.5,30.5,20,12.5,42.5,0.5,0.5,floral
+Ultra,Aroma,United States,2.5,3.5,30.5,20,12.5,42.5,0.5,0.5,bouquet
+Vanguard,Aroma,United States,4.5,5.5,17.5,30,12.5,37.5,0.5,0.5,wood
+Vanguard,Aroma,United States,4.5,5.5,17.5,30,12.5,37.5,0.5,0.5,cedary
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,fresh
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,peaches
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,apricot
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,limes
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,mixed
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,citrus
+Wai-iti,Aroma,New Zealand,2.5,4.5,23,NA,8.5,27.5,13,1,spice
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,earth
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,floral
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,botanical
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,sweet
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,fruit
+Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,flavors
+Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,pineapple
+Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,citrus
+Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,pine
+Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,resin
+Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,citrus
+Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,orange
+Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,herbal
+Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,flavors
+Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,orange
+Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,vanilla
+Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,floral
+Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,blackcurrant
+Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,fruity
+Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,spicy
+Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,blackcurrant
+Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,spicy
+Chelan,Bittering,United States,13,8.5,34,50,10.5,13.5,0.5,1,floral
+Chelan,Bittering,United States,13,8.5,34,50,10.5,13.5,0.5,1,citrus
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,black
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,pepper
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,licorice
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,curry
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,subtle
+Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,citrus
+Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,subtle
+Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,wild
+Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,grassy
+Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,grapefruit
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,weet
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,fruits
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,pear
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,pineapple
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,blackcurrant
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,grapefruit
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,lime
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,gooseberry
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,spicy
+Galena,Bittering,United States,13,8,40,57.5,4,12.5,0.5,0.5,wood
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,spicy
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,dried
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,fruit
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,floral
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,pine
+Green Bullet,Bittering,New Zealand,14,6.5,42,65,5,15,0.5,1,resin
+Hallertauer Taurus,Bittering,Germany,14,3.5,24,30,8.5,30,0.5,1,chocolate
+Hallertauer Taurus,Bittering,Germany,14,3.5,24,30,8.5,30,0.5,1,banana
+Hallertauer Taurus,Bittering,Germany,14,3.5,24,30,8.5,30,0.5,1,spice
+Hallertauer Taurus,Bittering,Germany,14,3.5,24,30,8.5,30,0.5,1,pepper
+Hallertauer Taurus,Bittering,Germany,14,3.5,24,30,8.5,30,0.5,1,curry
+HBC 682,Bittering,United States,19.5,4.5,31,50,4.5,14,NA,1.5,strong
+HBC 682,Bittering,United States,19.5,4.5,31,50,4.5,14,NA,1.5,earth
+HBC 682,Bittering,United States,19.5,4.5,31,50,4.5,14,NA,1.5,spicy
+HBC 682,Bittering,United States,19.5,4.5,31,50,4.5,14,NA,1.5,herbal
+Herkules,Bittering,Germany,14.5,4.5,35,40,9.5,37.5,0.5,1.5,robust
+Herkules,Bittering,Germany,14.5,4.5,35,40,9.5,37.5,0.5,1.5,hoppy
+Herkules,Bittering,Germany,14.5,4.5,35,40,9.5,37.5,0.5,1.5,citrus
+Herkules,Bittering,Germany,14.5,4.5,35,40,9.5,37.5,0.5,1.5,melon
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,spicy
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,fruity
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,apple
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,pepper
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,bitter
+Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,distinc
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,spicy
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,fruity
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,apple
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,pepper
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,bitter
+Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,distinc
+Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,sugar
+Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,pineapple
+Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,mint
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,floral
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,fruity
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,herbal
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,resin
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,toffee
+Millennium,Bittering,United States,16.5,5.5,32,45,9,20,0.5,2,pear
+Newport,Bittering,United States,15,8,37,50.5,5.5,11.5,0.5,2,earth
+Newport,Bittering,United States,15,8,37,50.5,5.5,11.5,0.5,2,citrus
+Newport,Bittering,United States,15,8,37,50.5,5.5,11.5,0.5,2,wine
+Newport,Bittering,United States,15,8,37,50.5,5.5,11.5,0.5,2,balsamic
+Nugget,Bittering,Germany,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
+Nugget,Bittering,Germany,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
+Nugget,Bittering,United States,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
+Nugget,Bittering,United States,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,spicy
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,black
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,pepper
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,berry
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,fruit
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,subtle
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,blackberry
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,floral
+Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,oak
+Pacific Sunrise,Bittering,New Zealand,13,6,28.5,50,7.5,22,0.5,1.5,pine
+Southern Star,Bittering,South Africa,13.5,4.5,31,39,15,22,NA,1,spicy
+Southern Star,Bittering,South Africa,13.5,4.5,31,39,15,22,NA,1,tangy
+Southern Star,Bittering,South Africa,13.5,4.5,31,39,15,22,NA,1,berry
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,pepper
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,incense
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,anise
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,orange
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,pink
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,grapefruit
+Summit™,Bittering,United States,16,5,30.5,35,14,20,0.5,2,tangerine
+Sun,Bittering,United States,14,5.5,35,62.5,7.5,12.5,0.5,3.5,herbaceous
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,green
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,sage
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,spicy
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,peppery
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,citrus
+Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,marmalade
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,pungent
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,herbal
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,spicy
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,black
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,pepper
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,licorice
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,curry
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,subtle
+Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,citrus
+Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,tropical
+Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,fruit
+Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,pine
+Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,herbal
+Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,resin
+Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,subtle
+Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,pine
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,spicy
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,herbal
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,pungent
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,black
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,pepper
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,licorice
+Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,curry
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,pear
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,watermelon
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,stone
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,fruit
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,fresh
+Bitter Gold,Dual Purpose,United States,13,5,38.5,50,9,14,0.5,1.5,grass
+Bramling Cross,Dual Purpose,United Kingdom,6.5,2,28.5,37.5,16,30.5,0.5,0.5,strong
+Bramling Cross,Dual Purpose,United Kingdom,6.5,2,28.5,37.5,16,30.5,0.5,0.5,spice
+Bramling Cross,Dual Purpose,United Kingdom,6.5,2,28.5,37.5,16,30.5,0.5,0.5,blackcurrant
+Bramling Cross,Dual Purpose,United Kingdom,6.5,2,28.5,37.5,16,30.5,0.5,0.5,loganberry
+Bramling Cross,Dual Purpose,United Kingdom,6.5,2,28.5,37.5,16,30.5,0.5,0.5,lemon
+Celeia,Dual Purpose,Slovenia,4.5,2.5,27.5,30.5,8.5,20.5,5,1.5,noble
+Centennial,Dual Purpose,United States,10,3.5,29.5,50,6.5,14,0.5,1.5,lemon
+Centennial,Dual Purpose,United States,10,3.5,29.5,50,6.5,14,0.5,1.5,floral
+Challenger,Dual Purpose,United Kingdom,7,3,22.5,36,9,28.5,2,1,cedar
+Challenger,Dual Purpose,United Kingdom,7,3,22.5,36,9,28.5,2,1,green
+Challenger,Dual Purpose,United Kingdom,7,3,22.5,36,9,28.5,2,1,tea
+Challenger,Dual Purpose,United Kingdom,7,3,22.5,36,9,28.5,2,1,sweet
+Challenger,Dual Purpose,United Kingdom,7,3,22.5,36,9,28.5,2,1,fruit
+Chinook,Dual Purpose,United States,13,3.5,31.5,37.5,10,22.5,0.5,1.5,grapefruit
+Chinook,Dual Purpose,United States,13,3.5,31.5,37.5,10,22.5,0.5,1.5,spice
+Chinook,Dual Purpose,United States,13,3.5,31.5,37.5,10,22.5,0.5,1.5,pine
+Cluster,Dual Purpose,United States,6.5,4.5,39,50,6.5,16.5,0.5,0,floral
+Cluster,Dual Purpose,United States,6.5,4.5,39,50,6.5,16.5,0.5,0,earth
+Cluster,Dual Purpose,United States,6.5,4.5,39,50,6.5,16.5,0.5,0,sweet
+Cluster,Dual Purpose,United States,6.5,4.5,39,50,6.5,16.5,0.5,0,fruit
+Dr. Rudi,Dual Purpose,New Zealand,11,7.5,34.5,29.5,10,33,0.5,1,resin
+Dr. Rudi,Dual Purpose,New Zealand,11,7.5,34.5,29.5,10,33,0.5,1,pine
+Dr. Rudi,Dual Purpose,New Zealand,11,7.5,34.5,29.5,10,33,0.5,1,lemongrass
+Ella,Dual Purpose,Australia,14.5,5.5,36,45,15,19,0.5,2.5,distinct
+Ella,Dual Purpose,Australia,14.5,5.5,36,45,15,19,0.5,2.5,grapefruit
+Ella,Dual Purpose,Australia,14.5,5.5,36,45,15,19,0.5,2.5,tropical
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,smooth
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,tangerine
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,orange
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,marmalade
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,apricot
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,geranium
+First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,magnolia
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,wood
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,mint
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,grass
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,subtle
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,fruit
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,delicate
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,mint
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,grass
+Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,floral
+Galaxy,Dual Purpose,Australia,13.5,5.5,37,51,8,1.5,3,4,distinct
+Galaxy,Dual Purpose,Australia,13.5,5.5,37,51,8,1.5,3,4,passionfruit
+Galaxy,Dual Purpose,Australia,13.5,5.5,37,51,8,1.5,3,4,citrus
+Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,plum
+Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,blackberry
+Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,wood
+Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,subtle
+Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,floral
+Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,fresh
+Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,zest
+Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,lime
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,peach
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,berry
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,tropical
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,fruit
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,citrus
+HBC 431,Dual Purpose,United States,15,4.5,18,35,13.5,24,NA,1,herbal
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,peachy
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,stone
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,fruit
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,tropical
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,pineapple
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,lime
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,herbal
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,cedar
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,coconut
+HBC 438,Dual Purpose,United States,13,5.5,24,63.5,9.5,8,0.5,3,distinct
+Helga,Dual Purpose,Australia,6,6,21.5,7,12.5,45,0.5,0.5,noble
+Helga,Dual Purpose,Australia,6,6,21.5,7,12.5,45,0.5,0.5,herbal
+Helga,Dual Purpose,Australia,6,6,21.5,7,12.5,45,0.5,0.5,earth
+Herald,Dual Purpose,United Kingdom,12,4.5,36,40,7,15,0.5,1,orange
+Herald,Dual Purpose,United Kingdom,12,4.5,36,40,7,15,0.5,1,grapefruit
+Horizon,Dual Purpose,United States,13,7,19.5,67.5,5.5,9,NA,1.5,floral
+Horizon,Dual Purpose,United States,13,7,19.5,67.5,5.5,9,NA,1.5,spicy
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,fresh
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,tropical
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,fruit
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,excellent
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,finish
+Kohatu,Dual Purpose,New Zealand,6.5,4.5,21,35.5,11,36.5,0.5,1,bitter
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,floral
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,peppery
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,lemon
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,citrus
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,dark
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,fruit
+Loral®,Dual Purpose,United States,11.5,4.5,22.5,55,5,17,0.5,1.5,herbal
+Marynka,Dual Purpose,Czech Republic,10.5,11.5,29.5,29.5,11.5,29.5,1.5,1.5,earth
+Marynka,Dual Purpose,Czech Republic,10.5,11.5,29.5,29.5,11.5,29.5,1.5,1.5,herbal
+Mount Rainier,Dual Purpose,United States,6,9,22,55,8,17.5,0.5,1.5,noble
+Mount Rainier,Dual Purpose,United States,6,9,22,55,8,17.5,0.5,1.5,licorice
+Mount Rainier,Dual Purpose,United States,6,9,22,55,8,17.5,0.5,1.5,floral
+Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,white
+Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,wine
+Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,fruity
+Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,gooseberry
+Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,grape
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,spice
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,cedar
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,pine
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,subtle
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,floral
+Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,berry
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,mint
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,pine
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,grass
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,evergreen
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,wood
+Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,mint
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,mint
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,pine
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,grass
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,evergreen
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,wood
+Northern Brewer,Dual Purpose,United States,8.25,4,30.75,37.5,14,35.75,0.5,1.25,mint
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,spice
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,pepper
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,citrus
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,fruity
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,floral
+Opal,Dual Purpose,Australia,13.5,3.5,31,37.5,10,22.5,NA,0.5,herbal
+Orion,Dual Purpose,Germany,7,3.5,28.5,26.5,11,37,0.5,0.5,NA
+Outeniqua,Dual Purpose,South Africa,12.5,4.5,29,40.5,9.5,30.5,0.5,1,strong
+Outeniqua,Dual Purpose,South Africa,12.5,4.5,29,40.5,9.5,30.5,0.5,1,punchy
+Outeniqua,Dual Purpose,South Africa,12.5,4.5,29,40.5,9.5,30.5,0.5,1,hoppy
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,fresh
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,citrus
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,spice
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,bold
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,herbal
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,subtle
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,black
+Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,pepper
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,herbal
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,subtle
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,fruit
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,mint
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
+Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,herbal
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,subtle
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,fruit
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,mint
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
+Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
+Phoenix,Dual Purpose,United Kingdom,13.5,4,26,28,9,28.5,1.5,1.5,spicy
+Phoenix,Dual Purpose,United Kingdom,13.5,4,26,28,9,28.5,1.5,1.5,floral
+Phoenix,Dual Purpose,United Kingdom,13.5,4,26,28,9,28.5,1.5,1.5,chocolate
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,fruit
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,spice
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,lemon
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,grapefruit
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,pear
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,berry
+Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,flavors
+Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,lemon
+Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,grapefruit
+Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,herbal
+Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,cedar
+Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,flavors
+Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,mint
+Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,pineapple
+Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,menthol
+Pride of Ringwood,Dual Purpose,Australia,10.5,5,36,37.5,7.5,5.5,0.5,1.5,cedar
+Pride of Ringwood,Dual Purpose,Australia,10.5,5,36,37.5,7.5,5.5,0.5,1.5,oak
+Pride of Ringwood,Dual Purpose,Australia,10.5,5,36,37.5,7.5,5.5,0.5,1.5,herbal
+Progress,Dual Purpose,United Kingdom,6.5,2,30.5,32.5,13.5,43.5,0.5,0,grass
+Progress,Dual Purpose,United Kingdom,6.5,2,30.5,32.5,13.5,43.5,0.5,0,mint
+Progress,Dual Purpose,United Kingdom,6.5,2,30.5,32.5,13.5,43.5,0.5,0,honey
+Progress,Dual Purpose,United Kingdom,6.5,2,30.5,32.5,13.5,43.5,0.5,0,blackcurrant
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,stone
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,fruit
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,fig
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,fresh
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,orchard
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,fruits
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,apricot
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,resin
+Rakau,Dual Purpose,New Zealand,10.5,5.5,24,56,5,16,4.5,2,pine
+Simcoe®,Dual Purpose,United States,13,4.5,17.5,62.5,6.5,12.5,0.5,2,earth
+Simcoe®,Dual Purpose,United States,13,4.5,17.5,62.5,6.5,12.5,0.5,2,passion
+Simcoe®,Dual Purpose,United States,13,4.5,17.5,62.5,6.5,12.5,0.5,2,fruit
+Simcoe®,Dual Purpose,United States,13,4.5,17.5,62.5,6.5,12.5,0.5,2,pine
+Simcoe®,Dual Purpose,United States,13,4.5,17.5,62.5,6.5,12.5,0.5,2,berry
+Smaragd,Dual Purpose,Germany,5,4,15.5,30,11.5,NA,0.5,0,floral
+Smaragd,Dual Purpose,Germany,5,4,15.5,30,11.5,NA,0.5,0,spicy
+Smaragd,Dual Purpose,Germany,5,4,15.5,30,11.5,NA,0.5,0,fruity
+Sorachi Ace,Dual Purpose,United States,12.5,6.5,26.5,50,9,23,3.5,2,lemon
+Sorachi Ace,Dual Purpose,United States,12.5,6.5,26.5,50,9,23,3.5,2,lime
+Sorachi Ace,Dual Purpose,United States,12.5,6.5,26.5,50,9,23,3.5,2,dill
+Southern Brewer,Dual Purpose,South Africa,9.5,3.5,39.5,41,9.5,19,NA,1,NA
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,citrus
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,tropical
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,fruits
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,lemon
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,zest
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,lime
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,pine
+Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,spice
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,subtle
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,wood
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,earth
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,bright
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,smooth
+Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,bitter
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,fruity
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,flavors
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,floral
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,grassy
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,herbal
+Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,mint
+Status,Dual Purpose,United States,13,8.5,33.5,42.5,8.5,17.5,0.5,1,NA
+Sterling,Dual Purpose,United States,7.5,5,23.5,46,6,21,14,1,noble
+Sterling,Dual Purpose,United States,7.5,5,23.5,46,6,21,14,1,spicy
+Sticklebract,Dual Purpose,New Zealand,13.5,7.5,43,52.5,5.5,11.5,6,1.5,pine
+Sticklebract,Dual Purpose,New Zealand,13.5,7.5,43,52.5,5.5,11.5,6,1.5,citrus
+Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,grass
+Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,pine
+Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,citrus
+Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,flavors
+Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,subtle
+Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,resin
+Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,fruit
+Super Styrian (Aurora),Dual Purpose,Slovenia,7.5,3.5,24,30,5,19,7,1,noble
+Waimea,Dual Purpose,New Zealand,17.5,4.5,29,40,12.5,20,0.5,1.5,pine
+Waimea,Dual Purpose,New Zealand,17.5,4.5,29,40,12.5,20,0.5,1.5,citrus
+Waimea,Dual Purpose,New Zealand,17.5,4.5,29,40,12.5,20,0.5,1.5,tangelo
+Wakatu,Dual Purpose,New Zealand,7,8,29,35.5,8,16,6.699999999999999,0.5,floral
+Wakatu,Dual Purpose,New Zealand,7,8,29,35.5,8,16,6.699999999999999,0.5,citrusy
+Wakatu,Dual Purpose,New Zealand,7,8,29,35.5,8,16,6.699999999999999,0.5,lime
+WGV,Dual Purpose,United Kingdom,6,2.5,37.5,24,13,41.5,2,0.5,earth
+WGV,Dual Purpose,United Kingdom,6,2.5,37.5,24,13,41.5,2,0.5,botanical
+WGV,Dual Purpose,United Kingdom,6,2.5,37.5,24,13,41.5,2,0.5,floral
+WGV,Dual Purpose,United Kingdom,6,2.5,37.5,24,13,41.5,2,0.5,sweet
+WGV,Dual Purpose,United Kingdom,6,2.5,37.5,24,13,41.5,2,0.5,fruit
+Willamette,Dual Purpose,United States,5,3.5,32.5,50,7.5,25,5.5,1,floral
+Willamette,Dual Purpose,United States,5,3.5,32.5,50,7.5,25,5.5,1,incense
+Willamette,Dual Purpose,United States,5,3.5,32.5,50,7.5,25,5.5,1,elderberry
