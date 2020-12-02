@@ -4,7 +4,7 @@ output: html_notebook
 ---
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
@@ -263,6 +263,7 @@ hops
 
 # Exploratory Data Analysis (EDA)
 
+## Origin
 We'll start by looking at some basic feature of the data set.  In this spreadsheet the U.S. represents the majority of the cultivars.  While the folks at Brew Cabin claim this is "All Hop Varieties on Earth," you can go to the growers association web pages for any of these countries and find many more.  Caveat Emptor.
 ```{r}
 # =============================================================
@@ -272,6 +273,7 @@ hops %>% ggplot(aes(origin,fill=type)) + geom_bar() +
   coord_flip()
 ```
 
+## Alpha Acids
 Every brewer knows that high alpha hops are for bittering.  Let's demonstrate this.  
 ```{r}
 #hops %>% select(origin,type) %>% table()
@@ -303,68 +305,79 @@ hops %>% ggplot(aes(x=alpha,y=type,fill=type)) +
 
 This is a much more pleasing plot and actually reveals a surprise.  Dual purpose hops are not spread evenly across the alpha acid spectrum but are bi-modally distributed.  Is this because growers select for bittering or aroma and brewers put the dual purpose label on later?
 
+Now let's look at two other major components, beta Acid and total oil concentration.  Unlike alpha acid, there is not clear story.
+
+# Beta Acids
+
+These don't seem related to purpose at all.
 
 ```{r}
-# Now oils
-  hops %>% ggplot(aes(x=total_oil,y=type,fill=type)) +
+# Now Beta acids
+  hops %>% ggplot(aes(x=beta,y=type,fill=type)) +
     # geom_density(alpha=0.5) +
     geom_density_ridges(alpha=0.5) +
     scale_y_discrete(expand = c(0, 0)) +     # will generally have to set the `expand` option
     scale_x_continuous(expand = c(0, 0)) +   # for both axes to remove unneeded padding
     coord_cartesian(clip = "off") + # to avoid clipping of the very top of the top ridgeline
     theme_ridges() +
+    labs(title= "Distribution of Hop Beta Acids by Purpose",
+         y = "Relative Occurance",
+         x = "Beta Acid Range")
+```
+
+# Total Oil
+
+Oils are where the aroma components reside.  We might imagine but here we can see that more alpha also correlates to more oils.
+```{r}
+# Now oils
+  hops %>% ggplot(aes(x=total_oil,y=type,fill=type)) +
+    geom_density_ridges(alpha=0.5) +
+    scale_y_discrete(expand = c(0, 0)) +
+    scale_x_continuous(expand = c(0, 0)) +
+    coord_cartesian(clip = "off") +
+    theme_ridges() +
     labs(title= "Distribution of Hop Total Oils by Purpose",
          y = "Relative Occurance",
          x = "Total Oil Range")
-  NULL
+```
 
-# plot alpha vs oil by bittering type
-hops %>%
-  filter(type != "Dual Purpose") %>%
-  ggplot(aes(alpha,total_oil)) +
-  geom_point(aes(color=type,shape=type)) +
-  geom_smooth(method = "lm",se=FALSE,color = "black")
 
+```{r}
 hops %>%
   ggplot(aes(alpha,total_oil)) +
-  geom_point(aes(color=type,shape=type)) +
-  geom_smooth(method = "lm",se=FALSE,color = "black")
+  geom_point(aes(color=type,shape=type),size=3) +
+  geom_smooth(method = "lm",se=TRUE,color = "black")
+```
 
+
+```{r}
 # use K-means to create three clusters using alpha and oil
 hop_type <- hops %>%
   ungroup() %>%
-#  filter(type != "Dual Purpose") %>%
   select(-variety) %>%
-#  select(alpha_acid_mean,total_oil_mean) %>%
-  mutate(cluster = as.character(kmeans(cbind(alpha,total_oil),centers=3)$cluster))
+  mutate(cluster = as.character(kmeans(cbind(beta,total_oil),centers=3)$cluster))
 
 
 # plot alpha vs oil by bittering type
 hop_type %>%
-  ggplot(aes(alpha,total_oil,color=cluster,shape=type)) +
-  geom_point()
+  ggplot(aes(beta,total_oil,color=cluster,shape=type)) +
+  geom_point(size=3)
+```
 
-# -----------------------------------------------
-# Plot Ranges of components
-# make data long first
-
-hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
-  filter(component %in% c("alpha","beta")) %>%
-  ggplot(aes(component,value,color=type)) + geom_boxplot() +
-  stat_summary(fun=mean, geom="point", shape=23, size=4) +
-  scale_x_discrete(labels=c("Alpha","Beta")) +
-#  coord_flip() +
-  labs(x="Acids (%)",y="Quantity") +
-  facet_grid(~type)
-
+# Co-Humulone
+```{r}
 hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
   filter(component %in% c("cohumulone")) %>%
   ggplot(aes(component,value,color=type)) + geom_boxplot() +
   stat_summary(fun=mean, geom="point", shape=23, size=4) +
   scale_x_discrete(labels=c("")) +
-  labs(x="Co-humulone",y="Percent of Alpha Acids") +
+  labs(x="Co-humulone",y="Percent") +
   facet_grid(~type)
+```
 
+# Individual Oils
+
+```{r}
 hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
   filter(component %in% c("total_oil")) %>%
   ggplot(aes(component,value,color=type)) + geom_boxplot() +
@@ -372,7 +385,10 @@ hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
   scale_x_discrete(labels=c("")) +
   labs(x="Total Oil (mg/100g)",y="Quantity") +
   facet_grid(~type)
+```
 
+
+```{r}
 # not much here
 hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
   filter(!(component %in% c("alpha","beta","total_oil","cohumulone"))) %>%
@@ -381,8 +397,11 @@ hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
   facet_grid(~type) +
   coord_flip() +
   labs(x="Oil",y="Percent of Total Oil")
+```
 
-# -----------------------------------------
+# Qualitative Descriptors
+
+```{r}
 # show descriptors by popularity
 
 # show style popularity
@@ -393,7 +412,10 @@ hops_styles %>%
   ggplot(aes(fct_reorder(beer_styles,n),n)) + geom_col() +
   coord_flip() +
   labs(x= "Beer Style",y="Suggested Hop Cultivars")
+```
 
+
+```{r}
 # show popular descriptions for aromas
 hops_aromas %>%
   count(aroma) %>%
