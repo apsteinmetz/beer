@@ -8,16 +8,16 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
-Typically, I will think about hopping with a style archetype in mind,  I will survey a list of hops, read about the attributes, chemical compositions and then choose the hop bill. I seldom think about the universe of hop cultivars as a whole and what meta-profile it might have. For this note, I will look at aggregate features of multiple cultivars with a focus on the top of the hop taxonomy, purpose, which can be either bittering, aroma or dual-purpose.  Can we analytically determine the purpose of a hop using it's chemical composition?  The simple answer is, of course, "yes."  High-alpha cultivars are usually bittering hops.  The purpose of this exercise is not to discover the obvious but to explore the techniques we can bring to bear to do meta-analysis and visualization on large data sets of brewing information.
+Typically, I will think about hopping with a style archetype in mind,  I will survey a list of hops, read about the attributes, chemical compositions and then choose the hop bill. I seldom think about the universe of hop cultivars as a whole and what meta-profile it might have. For this note, I will look at aggregate features of multiple cultivars with a focus on the top of the hop taxonomy, purpose, which can be either bittering, aroma or dual-purpose.  Can we analytically determine the purpose of a hop using it's chemical composition?  The simple answer is, of course, "yes."  High-alpha cultivars are usually bittering hops.  **The purpose of this exercise is not to discover the obvious but to explore the techniques we can bring to bear to do meta-analysis and visualization on large data sets of brewing information.**
 
 Getting the data and putting it into analyzable form is the biggest part of these projects.  We need nice tables of data but often we have unstructured or semi-structured text.  We are in luck today because the good folks at [brewcabin.com](https://www.brewcabin.com/hop-varieties/) have put the data from 147 hop cultivars into a publicly accessible Google spreadsheet that we can easily import.
 
 Less structured data is more of a pain but do-able. The source for much of the hops spreadsheet was information from Yakima Chief Hops.  I assume they hand scraped [this PDF file](https://www.yakimachief.com/wp-content/uploads/Yakima_Chief_Hops_Varieties_19.02.04.pdf) but we could build a robot to do it (with permission, of course). You can look at a [project I did here](https://outsiderdata.netlify.app/post/is-free-pre-k-in-nyc-favoring-the-rich/) for an example of data scraping from within PDF files. 
 
-The format of this note is a data science notebook.  The code to replicate the work and present all the data is presented along with the descriptive text.  In the web page version there is a button at at the top labeled "code" which you can use to toggle code visibility on or off.  I recommend you turn code visibility "off" to begin with.  This is more readable that way.
+The format of this note is a data science notebook.  The code to replicate the work and present all the data is presented along with the descriptive text.  In the web page version there is a button at at the top labeled "code" which you can use to toggle code visibility on or off.  **I recommend you turn code visibility "off" to begin with.  This is more readable that way.**
 
 # Load the data from the spreadsheet
-```{r Loading}
+```{r Loading, message=FALSE, warning=FALSE}
 # Hop analysis demo
 
 library(tidyverse)
@@ -125,7 +125,7 @@ brew_stop_words <- tibble(word = c("aromas","aroma","mild","pleasant","character
                     "top","tones","overtones","understated","lots",
                     "needles","clean","cut","crushed","hints",
                     "character","characters","flavor","hop",
-                    "undercurrents"),
+                    "undercurrents","delicate","subtle","distinc","flavors","delicate","black"),
                     lexicon = "brewing")
 # --------------------------------------------
 # custom word stemmer
@@ -307,7 +307,7 @@ This is a much more pleasing plot and actually reveals a surprise.  Dual purpose
 
 Now let's look at two other major components, beta Acid and total oil concentration.  Unlike alpha acid, there is not clear story.
 
-# Beta Acids
+## Beta Acids
 
 These don't seem related to purpose at all.
 
@@ -325,9 +325,9 @@ These don't seem related to purpose at all.
          x = "Beta Acid Range")
 ```
 
-# Total Oil
+## Total Oil
 
-Oils are where the aroma components reside.  We might imagine but here we can see that more alpha also correlates to more oils.
+Oils are where the aroma components reside.  We might suspect that more oil is associated with aroma hops but here we can see that bittering hops also have more more oils.
 ```{r}
 # Now oils
   hops %>% ggplot(aes(x=total_oil,y=type,fill=type)) +
@@ -340,53 +340,42 @@ Oils are where the aroma components reside.  We might imagine but here we can se
          y = "Relative Occurance",
          x = "Total Oil Range")
 ```
-
+We can also see how hop constituents relate to each other.  We've seen how higher alpha hops are generally higher oil hops,also.  A simple scatter plot shows the relationship.  It's not tight but more alpha means more everything.
 
 ```{r}
 hops %>%
   ggplot(aes(alpha,total_oil)) +
-  geom_point(aes(color=type,shape=type),size=3) +
-  geom_smooth(method = "lm",se=TRUE,color = "black")
+  geom_point(aes(color=type,shape=type),size=6,alpha=0.8) +
+  geom_smooth(method = "lm",se=TRUE,color = "black") +
+  labs(x = "Alpha Acid %",y="Total Oil (mg/100ml",title = "More Alpha, More Oil")
 ```
-
-
+The relationship of "more alpha is more everything" is true for all three types.
+  
 ```{r}
-# use K-means to create three clusters using alpha and oil
-hop_type <- hops %>%
-  ungroup() %>%
-  select(-variety) %>%
-  mutate(cluster = as.character(kmeans(cbind(beta,total_oil),centers=3)$cluster))
+hops %>%
+  ggplot(aes(alpha,total_oil,color=type,fill=type,shape=type)) +
+  geom_point(size=6,alpha=0.8) +
+  geom_smooth(method = "lm",size=2,se=FALSE,aes(color = type)) +
+  labs(x = "Alpha Acid %",y="Total Oil (mg/100ml",title = "More Alpha, More Oil for all Types")
 
-
-# plot alpha vs oil by bittering type
-hop_type %>%
-  ggplot(aes(beta,total_oil,color=cluster,shape=type)) +
-  geom_point(size=3)
 ```
+## Other Components
 
-# Co-Humulone
-```{r}
-hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
-  filter(component %in% c("cohumulone")) %>%
-  ggplot(aes(component,value,color=type)) + geom_boxplot() +
-  stat_summary(fun=mean, geom="point", shape=23, size=4) +
-  scale_x_discrete(labels=c("")) +
-  labs(x="Co-humulone",y="Percent") +
-  facet_grid(~type)
+So far, only alpha acid, among alpha, beta and total oil,  seems to distinguish hop types.  Let's dig further and look at other constituents.
+
+## Co-Humulone
+
+Co-humulone has a rap for contributing harshness but that has been somewhat debunked of late.  Below we can see that bittering hops have a higher average fraction of co-humulone making up the alpha acid percentage than aroma hops, but the relationship is very loose. 
+```{r message=FALSE, warning=FALSE}
+
+hops %>% ggplot(aes(alpha,cohumulone,color=type,fill=type)) + 
+  geom_point(size=8,shape=21,alpha=0.5) +
+  labs(x = "Alpha Acid %",y="Co-humulone (% of Alpha Acid)",title = "More Alpha, More Co-humulone?")
+
 ```
 
 # Individual Oils
-
-```{r}
-hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
-  filter(component %in% c("total_oil")) %>%
-  ggplot(aes(component,value,color=type)) + geom_boxplot() +
-  stat_summary(fun=mean, geom="point", shape=23, size=4) +
-  scale_x_discrete(labels=c("")) +
-  labs(x="Total Oil (mg/100g)",y="Quantity") +
-  facet_grid(~type)
-```
-
+We've looked at total oils.  Does the makeup of the oils have a bearing on classification?  We'll switch up the visualization and use boxplots to visulize the range of oils in all varieties by type.  These plots show the median, the mean, the interquartile range and big outliers.  As we can see the range of oil fractions doesn't change much among varieties, though the extremes are pretty wide.  Nor do we see big differences in average fractions by type.  We do notice wider variability among aroma hop fractions than for bittering hops.
 
 ```{r}
 # not much here
@@ -401,6 +390,8 @@ hops %>% pivot_longer(names_to = "component",cols=where(is.double)) %>%
 
 # Qualitative Descriptors
 
+Thus far we've looked at the quantitave featues of the hop data set.  Since we turned the prose-style qualititative descriptors into word lists, we can examine those as well.  Which beer styles are the most flexible with respect to hop choice?  Maybe this chart answers the question or maybe it just answers the question "what styles of beer are most popular among brewers?"
+
 ```{r}
 # show descriptors by popularity
 
@@ -411,20 +402,160 @@ hops_styles %>%
   head(20) %>%
   ggplot(aes(fct_reorder(beer_styles,n),n)) + geom_col() +
   coord_flip() +
-  labs(x= "Beer Style",y="Suggested Hop Cultivars")
+  labs(x= "Beer Style",y="Suggested Hop Cultivars",
+       title = "Top 20 Beer Styles in Hop Data Set")
 ```
 
+More interesting, perhaps are the choices of aroma descriptors by hop type.  "Noble" is never used to describe bittering hops, as we would expect.  "Floral" is more popular for aroma hops.  "Spicy" is used more for bittering hops.
 
 ```{r}
 # show popular descriptions for aromas
-hops_aromas %>%
-  count(aroma) %>%
-  arrange(desc(n)) %>%
-  head(20) %>%
-  ggplot(aes(fct_reorder(aroma,n),n)) + geom_col() +
-  coord_flip() +
-  labs(x= "Aroma",y="Hop Cultivars With that Descriptor")
+# hops_aromas %>%
+#   count(aroma) %>%
+#   arrange(desc(n)) %>%
+#   head(20) %>%
+#   ggplot(aes(fct_reorder(aroma,n),n)) + geom_col() +
+#   coord_flip() +
+#   labs(x= "Aroma",y="Hop Cultivars With that Descriptor")
 
+hops %>% 
+  select(type,aroma) %>% 
+  unnest(aroma) %>% 
+  group_by(type) %>% 
+  count(aroma) %>% 
+  slice_max(n,n=20) %>% 
+
+  ggplot(aes(fct_reorder(aroma,n),n)) + 
+  geom_col() +
+  facet_grid(~type) +
+  labs(x= "Aroma",y="Hop Cultivars With that Descriptor") + 
+  coord_flip()
+
+  
+```
+
+## Machine Learning
+
+Finally, let's apply the intuition we've gained by kneading the data set with our hands to bake up some predictive models.  Can we use the data to predict how a hop will be classified?  Again, this is not super interesting becuse we know what makes a bittering hop, but lets get a little more precise and also see if we can take a crack at predicting what makes a "dual purpose" hop.
+
+The first tool we'll try is "recursive partitioning."  This is an attractive choice because the model gives us an easily explainable descision tree.  For this we'll use only our quantitative variables.
+```{r}
+# create subset features to be used
+hops_quant_only <- hops %>% select(variety,type,alpha,beta,cohumulone,myrcene,
+                               caryophyllene,humulene,farnesene,total_oil)
+
+write.csv(hops_quant_only,file="../data/hops_quant.csv")
+#add back qualitative features
+# create "long" data set
+hops_all_features <- hops %>%
+  select(variety,type,origin,alpha,beta,
+         cohumulone,myrcene,caryophyllene,
+         humulene,farnesene,total_oil) %>%
+  full_join(hops_aromas,by="variety") %>%
+  full_join(hops_styles,by="variety") %>%
+  full_join(hops_subs,by="variety") %>%
+  select(-variety)
+
+# --------------------------------------------------------------
+# Simple recursive partition models to make a decision tree
+hops_quant_dt <- rpart(type ~.,method = "class",data = hops_quant_only[,-1])
+
+# visualize decision tree
+rpart.plot::rpart.plot(hops_quant_dt)
+```
+
+What I find interesting here is that farnesene, which is typically the smallest fraction of oil, is relevant for selecting between aroma and dual purpose hops. We have to be cautious because, given the small sample size, it could be coincidence. How important are each of these features?  Again, farnesene is the only surprise.  Co-humulone is least important.
+
+```{r}
+# show feature importance
+vip::vip(hops_quant_dt)+ labs(title="Recursive Partition Feature Importance") 
+```
+
+Finally, how accurate is our model?  It got 25% wrong.
+
+```{r}
+# show model accuracy
+# view accuracy
+wrong.dt <- predict(hops_quant_dt,hops_quant_only,type="class") %>%
+  enframe(name= NULL,value = "prediction") %>%
+  bind_cols(hops_quant_only) %>%
+  group_by(type,prediction) %>%
+  tally() %>%
+  arrange(desc(n)) %>%
+#  expand(type,prediction) %>%
+#  full_join(wrong) %>%
+  unique %>%
+  replace_na(list(n=0)) %>%
+  mutate(correct = (type==prediction))
+
+wrong.dt %>%  ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
+  scale_size(range=c(5,30)) +
+  scale_color_manual(values=c("red","darkgreen")) +
+  labs(x="Actual Type",
+       y="Predicted Type",
+       title="Decision Tree Model Accuracy") +
+  theme(legend.position = "none") +
+  geom_label(aes(label=n,size=1))
 
 ```
 
+## Random Forest
+
+There are many sophisticated machine learning models suitable for use on massive data sets.  Most are overkill for this small set but let's play with one, "random forest."  It will allow us to add qualitative descriptor words as features. In this case we'll use aroma.  One caution right off the bat.  Do the people who ascribed these aromas know the variety and purpose of the cultivar beforehand?  Almost certainly.  That introduces a bias in descriptors, I assume.  We have to manipulate the data set again by turning each aroma word into a unique "dummy" variable in the data set.  Each word gets its own column with "1" if it is used to describe the hop and "0" if it not. This expands the size of the set to 141 columns but still pretty small in the machine learning world.
+
+As our models get more sophisticated we lose something in explainability.  We could show the decision tree but it would be a tangled spider web without much intuition.  This model runs 500 diffent decision trees to find the best one.
+
+Once again, alpha is the most important variable but several aroma words make the list as well.
+
+```{r}
+# ---------------------------------------------
+# create a row for every unique combination of data points, including qualiative variables
+hops_long <- hops %>% unnest(aroma) %>% select(!where(is.list))
+
+hops_dummies <- hops %>% select(variety,type, aroma) %>%
+  unnest(aroma) %>%
+  dcast(variety+type~aroma) %>%
+  as_tibble()
+
+hops_full <- hops_quant_only %>%
+  full_join(hops_dummies,by=c("variety","type")) %>%
+  remove_missing()
+
+set.seed(1)
+model <- randomForest(type~.,data=hops_full[,2:142],
+                      localImp = TRUE,
+#                      replace = FALSE,
+#                     maxnodes = 12,
+                      importance = TRUE)
+
+vip::vip(model) + labs(title="Random Forest Feature Importance")
+```
+
+How accurate is the model? The error rate of this model is actually higher at 36%. Adding features and complexity didn't improve results.  This may be beacuse several hop varietys have no aroma information at all, so our sample size is smaller and the results are not completely comparable.
+
+```{r}
+wrong.rf <- model$confusion %>% 
+  as_tibble(rownames = "type") %>% 
+  select(-class.error) %>% 
+  pivot_longer(cols=where(is.double),names_to = "prediction",values_to="n") %>% 
+  mutate(n=as.integer(n))  %>%
+  mutate(correct = (type==prediction)) %>%
+  {.}
+
+  wrong.rf %>% 
+    ggplot(aes(type,prediction,size=n,color=correct)) + geom_point() +
+    scale_size(range=c(5,30)) +
+    scale_color_manual(values=c("red","darkgreen")) +
+    labs(x="Actual Type",
+         y="Predicted Type",
+         title="Decision Tree Model Accuracy") +
+    theme(legend.position = "none") +
+    geom_label(aes(label=n,size=1))
+  
+```
+
+
+We are cheating in both of these cases for the sake of illustration.  Technically, if we want to do predictions, we should split our data into training and test sets so we do our predictions "out of sample."  This data set is too small to do this effectively.
+
+# Conclusion
+This has been a practice exercise just to demonstrate some of the tools we can use to explore relationships in brewing data.  I look forward to delving in to larger data sets that have more mysteries to uncover.

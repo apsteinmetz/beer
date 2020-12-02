@@ -10,7 +10,6 @@ Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,apricot
 Amarillo®,Aroma,United States,9.5,6.5,22.5,69,3,10,3,1,peach
 Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,spicy
 Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,herbal
-Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,subtle
 Aramis,Aroma,France,7.5,3.5,20.5,40,7,20.5,3,1,citrus
 Aurora,Aroma,Slovenia,7.5,3,23,22.5,7.5,22.5,7.5,0.5,noble
 Blanc,Aroma,Germany,10.5,4.5,24,62.5,1,1.5,0.5,1,floral
@@ -42,7 +41,6 @@ Citra®,Aroma,United States,13,3.5,22,65,6.5,9.5,0.5,2,lychee
 Crystal,Aroma,United States,3,5,23,52.5,6,21,0.5,1,wood
 Crystal,Aroma,United States,3,5,23,52.5,6,21,0.5,1,green
 East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,smooth
-East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,delicate
 East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,floral
 East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,lavender
 East Kent Goldings,Aroma,United Kingdom,5,2,29.5,30,12.5,40,0.5,0.5,spice
@@ -75,9 +73,7 @@ Falconer's Flight®,Aroma,United States,10.5,4.5,22.5,NA,NA,NA,NA,2.5,grapefruit
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,wood
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,mint
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,grass
-Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,subtle
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,fruit
-Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,delicate
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,mint
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,grass
 Fuggle,Aroma,United States,4.25,2,29,35.5,10,30,4.5,0.5,floral
@@ -92,7 +88,6 @@ Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,zest
 Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,lemon
 Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,orange
 Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,grapefruit
-Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,delicate
 Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,sweet
 Golding,Aroma,United Kingdom,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,fragrant
@@ -101,7 +96,6 @@ Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,zest
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,lemon
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,orange
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,grapefruit
-Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,delicate
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,sweet
 Golding,Aroma,United States,4.75,2.5,26,30,13.5,40,0.5,0.5,floral
 Hallertau,Aroma,United States,4,3.5,21,39.5,11,34,0.5,0.5,noble
@@ -110,6 +104,7 @@ Hallertau,Aroma,United States,4,3.5,21,39.5,11,34,0.5,0.5,herbal
 Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,spicy
 Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,floral
 Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,citrus
+Hallertauer Mittelfrüh,Aroma,Germany,4,3.5,20.5,15,8.5,32.5,0.5,0.5,noble
 Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,earth
 Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,grass
 Hallertauer Tradition,Aroma,Germany,6,4.5,27.5,22.5,12.5,50,0.5,1,nectar
@@ -128,7 +123,6 @@ Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,honeydew
 Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,melon
 Huell Melon,Aroma,Germany,6.5,7,27.5,36,7.5,15,0.5,0,strawberry
 Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,noble
-Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,delicate
 Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,floral
 Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,bouquet
 Liberty,Aroma,United States,4,3.5,27,37.5,10.5,37.5,0.5,0.5,spice
@@ -180,10 +174,10 @@ Riwaka,Aroma,New Zealand,5,4.5,32,68,3.5,8.5,0.5,1,citrus
 Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,earth
 Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,herbal
 Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,floral
+Saaz,Aroma,Czech Republic,3.5,3.5,27.5,22.5,11,42.5,8,0,noble
 Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,citrus
 Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,tropical
 Saaz Triploid B,Aroma,New Zealand,7,5,28.5,70,1.5,2,10,1.5,fruit
-Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,black
 Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,pepper
 Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,floral
 Santiam,Aroma,United States,6,7,23,31.5,7.5,24.5,15,1,spice
@@ -200,8 +194,10 @@ Spalt,Aroma,United States,4.5,4,22.5,45,5,15,12.5,0.5,herbal
 Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,noble
 Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,earth
 Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,herbal
+Spalter,Aroma,Germany,4,4.5,25.5,20,12.5,21.5,12.5,0.5,noble
 Spalter Select,Aroma,Germany,5,3.5,23,20,9,20,20,0.5,spicy
 Spalter Select,Aroma,Germany,5,3.5,23,20,9,20,20,0.5,grass
+Spalter Select,Aroma,Germany,5,3.5,23,20,9,20,20,0.5,noble
 Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,spicy
 Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,citrusy
 Strisselspalt,Aroma,France,4,4,22.5,25,9,20,0.5,0,floral
@@ -232,14 +228,12 @@ Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,spice
 Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,herbal
 Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,spicy
 Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,pepper
-Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,black
 Tettnanger,Aroma,United States,4.25,3.75,24.25,31.5,7.25,21.5,NA,0.25,tea
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,floral
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,spice
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,herbal
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,spicy
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,pepper
-Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,black
 Tettnanger,Aroma,Germany,4.25,3.75,24.25,31.5,7.25,21.5,14,0.25,tea
 Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,medium
 Tradition,Aroma,Germany,5.5,4.5,27,24.5,12.5,42.5,0.5,0.5,floral
@@ -273,7 +267,6 @@ Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,floral
 Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,botanical
 Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,sweet
 Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,fruit
-Whitbread Golding,Aroma,United Kingdom,6,2.5,37.5,23,13,38.5,1.5,0.5,flavors
 Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,pineapple
 Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,citrus
 Zythos®,Aroma,United States,11,5,29.5,NA,NA,NA,NA,0.5,pine
@@ -281,7 +274,6 @@ Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,resin
 Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,citrus
 Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,orange
 Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,herbal
-Admiral,Bittering,United Kingdom,14,5,41,39.5,7,7.5,NA,1,flavors
 Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,orange
 Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,vanilla
 Bravo,Bittering,United States,16.5,4,31.5,57.5,7,9.5,0.5,2.5,floral
@@ -292,13 +284,10 @@ Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,blackcurr
 Brewers Gold,Bittering,United States,8,3.75,44,45.5,8.75,22.5,0.5,1.75,spicy
 Chelan,Bittering,United States,13,8.5,34,50,10.5,13.5,0.5,1,floral
 Chelan,Bittering,United States,13,8.5,34,50,10.5,13.5,0.5,1,citrus
-Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,black
 Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,pepper
 Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,licorice
 Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,curry
-Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,subtle
 Columbus,Bittering,United States,15,4.5,32.5,35,10,20,0.5,1.5,citrus
-Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,subtle
 Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,wild
 Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,grassy
 Comet,Bittering,United States,9,4.5,35.5,47.5,12.5,1.5,0.5,1.5,grapefruit
@@ -336,13 +325,11 @@ Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,fruity
 Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,apple
 Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,pepper
 Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,bitter
-Magnum,Bittering,Germany,13.25,5.5,25,33.75,9.75,32.25,0.5,2,distinc
 Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,spicy
 Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,fruity
 Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,apple
 Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,pepper
 Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,bitter
-Magnum,Bittering,United States,13.25,5.5,25,33.75,9.75,32.25,0.5,2,distinc
 Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,sugar
 Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,pineapple
 Merkur,Bittering,Germany,13,5,18.5,49,8.5,30.5,0.5,2.5,mint
@@ -361,11 +348,9 @@ Nugget,Bittering,Germany,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
 Nugget,Bittering,United States,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
 Nugget,Bittering,United States,12.75,4.5,26.5,44.75,8.5,17.25,0.5,1,herbal
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,spicy
-Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,black
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,pepper
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,berry
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,fruit
-Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,subtle
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,blackberry
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,floral
 Pacific Gem,Bittering,New Zealand,15.5,7.5,38.5,57.5,6,16.5,0.5,1.5,oak
@@ -390,23 +375,19 @@ Target,Bittering,United Kingdom,10.5,4.5,37,50,9,19.5,0.5,1,marmalade
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,pungent
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,herbal
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,spicy
-Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,black
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,pepper
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,licorice
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,curry
-Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,subtle
 Tomahawk®,Bittering,United States,16,5,29,50,8,11.5,0.5,3,citrus
 Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,tropical
 Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,fruit
 Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,pine
 Victoria,Bittering,Australia,14.5,7,39,37.5,10,15,0.5,1.5,herbal
 Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,resin
-Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,subtle
 Warrior®,Bittering,United States,16,4.5,25,45,9,17.5,0.5,1.5,pine
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,spicy
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,herbal
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,pungent
-Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,black
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,pepper
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,licorice
 Zeus,Bittering,United States,15,5,31,45,10,17.5,0.5,1.5,curry
@@ -452,9 +433,7 @@ First Gold,Dual Purpose,United Kingdom,6.5,2.5,31.5,27.5,6.5,22,NA,0.5,magnolia
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,wood
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,mint
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,grass
-Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,subtle
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,fruit
-Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,delicate
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,mint
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,grass
 Fuggle,Dual Purpose,United Kingdom,4.25,2,29,35.5,10,30,6,0.5,floral
@@ -464,7 +443,6 @@ Galaxy,Dual Purpose,Australia,13.5,5.5,37,51,8,1.5,3,4,citrus
 Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,plum
 Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,blackberry
 Glacier,Dual Purpose,United States,6,7,12,47.5,8,30,0.5,0.5,wood
-Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,subtle
 Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,floral
 Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,fresh
 Hallertau Aroma,Dual Purpose,New Zealand,8.5,8,30,55,5.5,12.5,4.5,1.5,zest
@@ -518,7 +496,6 @@ Nelson Sauvin,Dual Purpose,New Zealand,13,7,24,55,6.5,20,0.5,1.5,grape
 Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,spice
 Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,cedar
 Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,pine
-Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,subtle
 Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,floral
 Northdown,Dual Purpose,United Kingdom,7.5,4.5,27,26,15,42.5,0.5,1.5,berry
 Northern Brewer,Dual Purpose,Germany,8.25,4,30.75,37.5,14,35.75,0.5,1.25,mint
@@ -548,12 +525,9 @@ Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,citrus
 Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,spice
 Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,bold
 Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,herbal
-Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,subtle
-Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,black
 Pacific Jade,Dual Purpose,New Zealand,13,7.5,24,33.5,10,32,0.5,1,pepper
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,herbal
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
-Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,subtle
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,fruit
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,mint
@@ -561,7 +535,6 @@ Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
 Perle,Dual Purpose,Germany,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
 Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,herbal
 Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,spicy
-Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,subtle
 Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,floral
 Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,fruit
 Perle,Dual Purpose,United States,7,4,29.75,35.5,10,32.25,0.5,0.25,mint
@@ -576,12 +549,10 @@ Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,lemon
 Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,grapefruit
 Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,pear
 Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,berry
-Pilgrim,Dual Purpose,United Kingdom,11.5,4.5,37,30,7.5,17,0.5,1.5,flavors
 Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,lemon
 Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,grapefruit
 Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,herbal
 Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,cedar
-Pioneer,Dual Purpose,United Kingdom,9,3.5,38,33.5,7.5,23,0.5,1,flavors
 Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,mint
 Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,pineapple
 Polaris,Dual Purpose,Germany,20.5,5,25,50,10.5,27.5,0.5,4.5,menthol
@@ -621,14 +592,12 @@ Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,zest
 Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,lime
 Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,pine
 Southern Cross,Dual Purpose,New Zealand,13,5.5,26.5,62.5,4,12,4,1.5,spice
-Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,subtle
 Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,wood
 Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,earth
 Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,bright
 Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,smooth
 Southern Promise,Dual Purpose,South Africa,10,4,21,21.5,9,25.5,0.5,0,bitter
 Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,fruity
-Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,flavors
 Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,floral
 Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,grassy
 Sovereign,Dual Purpose,United Kingdom,5,2.5,28,NA,7.5,NA,3.6,0.5,herbal
@@ -641,8 +610,6 @@ Sticklebract,Dual Purpose,New Zealand,13.5,7.5,43,52.5,5.5,11.5,6,1.5,citrus
 Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,grass
 Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,pine
 Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,citrus
-Super Alpha,Dual Purpose,New Zealand,13.5,7.5,37.5,52.5,6.5,20.5,0.5,1.5,flavors
-Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,subtle
 Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,resin
 Super Pride,Dual Purpose,Australia,14.5,7.5,32,37.5,8,1.5,0.5,1,fruit
 Super Styrian (Aurora),Dual Purpose,Slovenia,7.5,3.5,24,30,5,19,7,1,noble
