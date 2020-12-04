@@ -1,6 +1,10 @@
 ---
 title: "Hop Cultivar Analysis"
-output: html_notebook
+author: "Art Steinmetz"
+date: '2020-12-02'
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r include=FALSE}
@@ -14,7 +18,7 @@ Getting the data and putting it into analyzable form is the biggest part of thes
 
 Less structured data is more of a pain but do-able. The source for much of the hops spreadsheet was information from Yakima Chief Hops.  I assume they hand scraped [this PDF file](https://www.yakimachief.com/wp-content/uploads/Yakima_Chief_Hops_Varieties_19.02.04.pdf) but we could build a robot to do it (with permission, of course). You can look at a [project I did here](https://outsiderdata.netlify.app/post/is-free-pre-k-in-nyc-favoring-the-rich/) for an example of data scraping from within PDF files. 
 
-The format of this note is a data science notebook.  The code to replicate the work and present all the data is presented along with the descriptive text.  In the web page version there is a button at at the top labeled "code" which you can use to toggle code visibility on or off.  **I recommend you turn code visibility "off" to begin with.  This is more readable that way.**
+The format of this note is a data science notebook.  The code to replicate the work and present all the data is presented along with the descriptive text.  In the web page version there is a button at at the top right labeled "code" which you can use to toggle code visibility on or off.  **I recommend you turn code visibility "off" to begin with.  This is more readable that way.**
 
 # Load the data from the spreadsheet
 ```{r Loading, message=FALSE, warning=FALSE}
@@ -53,7 +57,7 @@ hops_raw
 ```
 # Clean up the Data
 
-While importing the spreadsheet is easy the data still needs a lot of cleaning up.  The chemical constituents are expressed as high and low ranges.  I choose to condense them into average values.  Further the words used to describe qualitative attributes like aroma and beer style are inconsistent. Are "citrusy" and "citrus" the same thing? Misspellings are common, German words, especially.  We also strip out "stop words" like "and","the","lots", etc, that don't really say anything. Fixing these is a tedious art but critical to success.  This part is actually the bulk of the code and uses the most run time in the notebook.  One thing that's confusing about our cleaned data is that I've embeded all the descriptive terms as lists in single columns. That will be make running our models easier.
+While importing the spreadsheet is easy the data still needs a lot of cleaning up.  The chemical constituents are expressed as high and low ranges.  I choose to condense them into average values.  Further the words used to describe qualitative attributes like aroma and beer style are inconsistent. Are "citrusy" and "citrus" the same thing? Misspellings are common, German words, especially.  We also strip out "stop words" like "and","the","lots", etc, that don't really say anything. Fixing these is a tedious art but critical to success.  This part is actually the bulk of the code and uses the most run time in the notebook.  One thing that's confusing about our cleaned data is that I've embeded all the descriptive terms nested as lists in single columns. That will be make running our models easier.
 ```{r Cleaning}
 
 # DATA CLEANING
@@ -141,22 +145,10 @@ brew_stem_words <-
     "zesty","zest",
     "zested","zest",
     "bittering","bitter",
-    "bitterness","bitter"
+    "bitterness","bitter",
+    "spicy","spice"
   )
 
-brew_stem_words <-
-  tribble(
-    ~term, ~stem,
-    "woodsy","wood",
-    "woody","wood",
-    "piney","pine",
-    "earthy","earth",
-    "resinous","resin",
-    "zesty","zest",
-    "zested","zest",
-    "bittering","bitter",
-    "bitterness","bitter"
-  )
 stem <- Vectorize(function(term) {
   i <- match(term, brew_stem_words$term)
   if (is.na(i)) {
@@ -264,7 +256,7 @@ hops
 # Exploratory Data Analysis (EDA)
 
 ## Origin
-We'll start by looking at some basic feature of the data set.  In this spreadsheet the U.S. represents the majority of the cultivars.  While the folks at Brew Cabin claim this is "All Hop Varieties on Earth," you can go to the growers association web pages for any of these countries and find many more.  Caveat Emptor.
+We'll start by looking at some basic features of the data set.  In this spreadsheet the U.S. represents the majority of the cultivars.  While the folks at Brew Cabin claim this is "All Hop Varieties on Earth," you can go to the growers association web pages for any of these countries and find many more.  Caveat Emptor.
 ```{r}
 # =============================================================
 #  EXPLORATORY DATA ANALYSIS
@@ -327,7 +319,7 @@ These don't seem related to purpose at all.
 
 ## Total Oil
 
-Oils are where the aroma components reside.  We might suspect that more oil is associated with aroma hops but here we can see that bittering hops also have more more oils.
+Oils are where the aroma components reside.  We might suspect that more oil is associated with aroma hops but here we can see that bittering hops also have relatively more more oils.
 ```{r}
 # Now oils
   hops %>% ggplot(aes(x=total_oil,y=type,fill=type)) +
@@ -366,6 +358,7 @@ So far, only alpha acid, among alpha, beta and total oil,  seems to distinguish 
 ## Co-Humulone
 
 Co-humulone has a rap for contributing harshness but that has been somewhat debunked of late.  Below we can see that bittering hops have a higher average fraction of co-humulone making up the alpha acid percentage than aroma hops, but the relationship is very loose. 
+
 ```{r message=FALSE, warning=FALSE}
 
 hops %>% ggplot(aes(alpha,cohumulone,color=type,fill=type)) + 
@@ -406,7 +399,7 @@ hops_styles %>%
        title = "Top 20 Beer Styles in Hop Data Set")
 ```
 
-More interesting, perhaps are the choices of aroma descriptors by hop type.  "Noble" is never used to describe bittering hops, as we would expect.  "Floral" is more popular for aroma hops.  "Spicy" is used more for bittering hops.
+More interesting, perhaps, are the choices of aroma descriptors by hop type.  "Noble" is never used to describe bittering hops, as we would expect.  "Floral" is very popular for aroma hops.
 
 ```{r}
 # show popular descriptions for aromas
@@ -418,13 +411,15 @@ More interesting, perhaps are the choices of aroma descriptors by hop type.  "No
 #   coord_flip() +
 #   labs(x= "Aroma",y="Hop Cultivars With that Descriptor")
 
-hops %>% 
+word_counts <- hops %>% 
   select(type,aroma) %>% 
   unnest(aroma) %>% 
+  filter(!is.na(aroma)) %>% 
   group_by(type) %>% 
   count(aroma) %>% 
-  slice_max(n,n=20) %>% 
+  slice_max(n,n=20)
 
+word_counts %>% 
   ggplot(aes(fct_reorder(aroma,n),n)) + 
   geom_col() +
   facet_grid(~type) +
@@ -434,9 +429,24 @@ hops %>%
   
 ```
 
+The only significantly used aroma word that is applied more to bittering hops is "pepper."
+```{r}
+word_counts %>% 
+  pivot_wider(names_from = type,values_from = n) %>% 
+  ggplot(aes(Aroma,Bittering)) + geom_point() + 
+  geom_abline(slope=1,intercept = c(0,0)) + 
+  geom_text(aes(label=aroma),nudge_y = 0.5) +
+  labs(title = "Siginificantly Used Aroma Descriptors",
+       subtitle = "Frequency by Type of Hops")
+
+```
+
+
 ## Machine Learning
 
 Finally, let's apply the intuition we've gained by kneading the data set with our hands to bake up some predictive models.  Can we use the data to predict how a hop will be classified?  Again, this is not super interesting becuse we know what makes a bittering hop, but lets get a little more precise and also see if we can take a crack at predicting what makes a "dual purpose" hop.
+
+## Recursive Partitioning
 
 The first tool we'll try is "recursive partitioning."  This is an attractive choice because the model gives us an easily explainable descision tree.  For this we'll use only our quantitative variables.
 ```{r}
@@ -507,7 +517,7 @@ As our models get more sophisticated we lose something in explainability.  We co
 
 Once again, alpha is the most important variable but several aroma words make the list as well.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 # ---------------------------------------------
 # create a row for every unique combination of data points, including qualiative variables
 hops_long <- hops %>% unnest(aroma) %>% select(!where(is.list))
@@ -522,7 +532,7 @@ hops_full <- hops_quant_only %>%
   remove_missing()
 
 set.seed(1)
-model <- randomForest(type~.,data=hops_full[,2:142],
+model <- randomForest(type~.,data=hops_full[,2:141],
                       localImp = TRUE,
 #                      replace = FALSE,
 #                     maxnodes = 12,
@@ -558,4 +568,4 @@ wrong.rf <- model$confusion %>%
 We are cheating in both of these cases for the sake of illustration.  Technically, if we want to do predictions, we should split our data into training and test sets so we do our predictions "out of sample."  This data set is too small to do this effectively.
 
 # Conclusion
-This has been a practice exercise just to demonstrate some of the tools we can use to explore relationships in brewing data.  I look forward to delving in to larger data sets that have more mysteries to uncover.
+This has been a practice exercise just to demonstrate some of the tools we can use to explore relationships in brewing data.  We've tortured a small data set to wring every last insight out of it.  I look forward to delving in to larger brewing data sets that have more mysteries to uncover.
